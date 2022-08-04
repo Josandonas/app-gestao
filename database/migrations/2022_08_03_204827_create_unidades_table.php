@@ -40,7 +40,7 @@ return new class extends Migration
     public function down()
     {
         //remover o relaciomentoco com  atable aprodutos
-        Schema::table('produtos',function(Blueprint $table){
+        Schema::table('produto_detalhes',function(Blueprint $table){
             //remover a fk
             $table->dropForeign('produto_detalhes_unidade_id_foreign');
             
