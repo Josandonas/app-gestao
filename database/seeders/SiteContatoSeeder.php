@@ -15,12 +15,13 @@ class SiteContatoSeeder extends Seeder
      */
     public function run()
     {
-        $contato = new SiteContato();
-        $contato->nome = 'sandonas';
-        $contato->telefone= '+5567998688942';
-        $contato->email = 'san@outlook.com';
-        $contato->motivo_contato= 1;
-        $contato->mensagem= 'Quero um pedido de desculpas pelo roubo das minhas informações';
-        $contato->save();
+        // $contato = new SiteContato();
+        // $contato->nome = 'sandonas';
+        // $contato->telefone= '+5567998688942';
+        // $contato->email = 'san@outlook.com';
+        // $contato->motivo_contato= 1;
+        // $contato->mensagem= 'Quero um pedido de desculpas pelo roubo das minhas informações';
+        // $contato->save();
+        SiteContato::factory()->count(100)->create();
     }
 }
