@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 //     return 'Olá seja bem vindo';
 // });
 
-Route::post('/contato',[\App\Http\Controllers\ContatoController::class,'contato'])->name('site.contato');
+Route::post('/contato',[\App\Http\Controllers\ContatoController::class,'salvar'])->name('site.contato');
 Route::get('/contato',[\App\Http\Controllers\ContatoController::class,'contato'])->name('site.contato');
 
 
