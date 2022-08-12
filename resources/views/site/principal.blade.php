@@ -4,7 +4,7 @@
 
 @section('conteudo')
     <div class="conteudo-destaque">
-    
+
         <div class="esquerda">
             <div class="informacoes">
                 <h1>Sistema Super Gestão</h1>
@@ -26,7 +26,7 @@
 
         <div class="direita">
             <div class="contato">
-                @component('site.layouts.components.form_contato')
+                @component('site.layouts.components.form_contato',['classe'=>'borda-branca', 'motivo_contatos' => $motivo_contatos])
                 @endcomponent
             </div>
         </div>

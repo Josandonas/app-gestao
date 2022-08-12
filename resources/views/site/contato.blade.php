@@ -10,10 +10,10 @@
 
     <div class="informacao-pagina">
         <div class="contato-principal">
-            @component('site.layouts.components.form_contato')
+            @component('site.layouts.components.form_contato',['classe'=>'borda-preta', 'motivo_contatos' => $motivo_contatos])
             @endcomponent
         </div>
-    </div>  
+    </div>
 </div>
 @include('site.layouts._partials.rodape')
 @endsection
