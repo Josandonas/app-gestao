@@ -6,7 +6,7 @@
     <br>
     <input name="email" type="text" placeholder="E-mail" class="{{$classe}}">
     <br>
-    <select name="motivo_contato" class="{{$classe}}">
+    <select name="motivo_contatos_id" class="{{$classe}}">
         <option value="">Qual o motivo do contato?</option>
 
         @foreach ($motivo_contatos as $motivo_contat)

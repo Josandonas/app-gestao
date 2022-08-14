@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('motivo_contatos', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->string('motivo_contato',20);
             $table->timestamps();
         });
